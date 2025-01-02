@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-gray-900;
+  }
+}
+
+:root {
+  --primary: #3b82f6;
+  --secondary: #6366f1;
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-b from-gray-900 to-gray-800;
+}
+
+.container {
+  @apply w-full max-w-[2000px] mx-auto;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+

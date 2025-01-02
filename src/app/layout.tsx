@@ -1,12 +1,13 @@
-import type { Metadata } from 'next'
+import '@/styles/globals.css'  
 import { Inter } from 'next/font/google'
-import './globals.css'
+import Menu from '@/components/Menu'
+import AccentToggle from '@/components/AccentToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Owen Njaria - Portfolio',
-  description: 'Ethical Hacker & Full-Stack Developer',
+export const metadata = {
+  title: 'Owen Njaria Njuguna - Portfolio',
+  description: 'Full-Stack Developer, Ethical Hacker, and Cybersecurity Enthusiast',
 }
 
 export default function RootLayout({
@@ -15,8 +16,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="h-full">
+      <body 
+        className={`${inter.className} min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white`} 
+        suppressHydrationWarning
+      >
+        <Menu />
+        <AccentToggle />
+        {children}
+      </body>
     </html>
   )
 }
+
