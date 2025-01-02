@@ -1,11 +1,11 @@
 # Owen Njaria Portfolio Website
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. View the live site at [owennjaria.netlify.app](https://owennjaria.netlify.app)
 
 ## Features
 
 - Responsive design
-- Dark theme
+- Dark theme with accent color customization
 - Interactive UI components
 - Dynamic color themes
 - Smooth animations with Framer Motion
@@ -66,28 +66,13 @@ This project is set up for easy deployment on Vercel. Follow these steps:
 4. Configure your project settings, including environment variables.
 5. Click "Deploy" and Vercel will automatically build and deploy your application.
 
-This project is also set up for deployment on Firebase Hosting. Follow these steps:
+This project is also set up for deployment on Netlify. Follow these steps:
 
-1. Install the Firebase CLI globally:
-   \`\`\`
-   npm install -g firebase-tools
-   \`\`\`
-
-2. Log in to Firebase:
-   \`\`\`
-   firebase login
-   \`\`\`
-
-3. Initialize Firebase in your project:
-   \`\`\`
-   firebase init
-   \`\`\`
-   Select "Hosting" and choose your Firebase project.
-
-4. Build and deploy your project:
-   \`\`\`
-   npm run deploy
-   \`\`\`
+1. Push your code to a GitHub repository.
+2. Sign up for a Netlify account if you haven't already.
+3. In Netlify, click "New site from Git" and select your GitHub repository.
+4. Configure your project settings, including environment variables.
+5. Click "Deploy site" and Netlify will automatically build and deploy your application.
 
 ## Environment Variables
 
@@ -101,7 +86,7 @@ RECIPIENT_EMAIL=your_email@example.com
 SENDER_EMAIL=noreply@yourdomain.com
 \`\`\`
 
-Make sure to add these environment variables to your Firebase project settings as well.
+Make sure to add these environment variables to your Netlify project settings as well.
 
 ## Built With
 
